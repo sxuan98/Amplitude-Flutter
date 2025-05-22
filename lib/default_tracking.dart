@@ -47,7 +47,7 @@ class DefaultTrackingOptions {
     return const DefaultTrackingOptions(
       sessions: true,
       appLifecycles: true,
-      // screenViews: true,
+      screenViews: true,
       deepLinks: true,
       attribution: true,
       pageViews: true,
