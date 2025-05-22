@@ -6,7 +6,7 @@ import FlutterMacOS
 #endif
 
 import AmplitudeSwift
-import AmplitudeSwiftSessionReplayPlugin
+// import AmplitudeSwiftSessionReplayPlugin
 import SessionReplayPlugin
 
 @objc public class SwiftAmplitudeFlutterPlugin: NSObject, FlutterPlugin {
