@@ -31,4 +31,5 @@ A new Flutter plugin project.
   s.swift_version = '5.9'
   s.dependency 'AmplitudeSwift', '~> 1.11'
   s.dependency 'AmplitudeSwiftSessionReplayPlugin', '~> 0.4.0'
+  s.dependency 'AmplitudeSessionReplay', '~> 0.4.0'
 end
