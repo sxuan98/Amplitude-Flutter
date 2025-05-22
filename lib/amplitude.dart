@@ -45,6 +45,17 @@ class Amplitude {
     }
   }
 
+  /// Initialize `AmplitudeSessionReplay`
+  Future<bool> initAmplitudeSessionReplay() async {
+    try {
+      await _channel.invokeMethod('initAmplitudeSessionReplay');
+      return true; // Initialization successful
+    } catch (e) {
+      print('Error initializing AmplitudeSessionReplay: $e');
+      return false; // Initialization failed
+    }
+  }
+
   /// Tracks an event. Events are saved locally.
   ///
   /// Uploads are batched to occur every 30 events or every 30 seconds

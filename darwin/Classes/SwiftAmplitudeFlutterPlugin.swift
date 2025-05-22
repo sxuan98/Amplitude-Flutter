@@ -6,6 +6,7 @@ import FlutterMacOS
 #endif
 
 import AmplitudeSwift
+import AmplitudeSwiftSessionReplayPlugin
 
 @objc public class SwiftAmplitudeFlutterPlugin: NSObject, FlutterPlugin {
     var instances: [String: Amplitude] = [:]
@@ -74,6 +75,14 @@ import AmplitudeSwift
             } catch {
                 amplitude?.logger?.warn(message: "\(call.method) called but failed.")
             }
+            
+        case "initAmplitudeSessionReplay":
+            // Set library
+            amplitude?.add(
+                plugin: AmplitudeSwiftSessionReplayPlugin(sampleRate: 1.0)
+            )
+            
+            result("initAmplitudeSessionReplay called..")
 
         case "getUserId":
             let userId = amplitude?.getUserId()
