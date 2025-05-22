@@ -32,7 +32,7 @@ class DefaultTrackingOptions {
   const DefaultTrackingOptions({
     this.sessions = true,
     this.appLifecycles = false,
-    this.screenViews = false,
+    this.screenViews = true,
     this.deepLinks = false,
     this.attribution = true,
     this.pageViews = true,
