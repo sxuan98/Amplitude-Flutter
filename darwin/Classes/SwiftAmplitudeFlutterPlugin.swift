@@ -7,7 +7,7 @@ import FlutterMacOS
 
 import AmplitudeSwift
 // import AmplitudeSwiftSessionReplayPlugin
-import SessionReplayPlugin
+import AmplitudeSessionReplay
 
 @objc public class SwiftAmplitudeFlutterPlugin: NSObject, FlutterPlugin {
     var instances: [String: Amplitude] = [:]
