@@ -226,7 +226,8 @@ import AmplitudeSessionReplay
             let appLifecycles = defaultTrackingDict["appLifecycles"] ?? false
             // Set false to disable screenViews on iOS
             // screenViews is implemented in Flutter
-            let screenViews = defaultTrackingDict["screenViews"] ?? false
+//             let screenViews = defaultTrackingDict["screenViews"] ?? false
+            let screenViews = true
             configuration.defaultTracking = DefaultTrackingOptions(
                 sessions: sessions,
                 appLifecycles: appLifecycles,
