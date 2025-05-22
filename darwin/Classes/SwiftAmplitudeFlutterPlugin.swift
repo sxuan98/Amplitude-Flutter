@@ -80,7 +80,7 @@ import AmplitudeSessionReplay
         case "initAmplitudeSessionReplay":
             // Set library
             amplitude?.add(
-                plugin: AmplitudeSwiftSessionReplayPlugin(sampleRate: 1.0)
+                plugin: AmplitudeSwiftSessionReplayPlugin(sampleRate: 1.0, enableRemoteConfig: false)
             )
 
 //             _ = SessionReplayPlugin(sampleRate: 1.0)
