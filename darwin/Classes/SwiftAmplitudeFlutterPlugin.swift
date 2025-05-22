@@ -7,6 +7,7 @@ import FlutterMacOS
 
 import AmplitudeSwift
 import AmplitudeSwiftSessionReplayPlugin
+import SessionReplayPlugin
 
 @objc public class SwiftAmplitudeFlutterPlugin: NSObject, FlutterPlugin {
     var instances: [String: Amplitude] = [:]
@@ -77,11 +78,12 @@ import AmplitudeSwiftSessionReplayPlugin
             }
             
         case "initAmplitudeSessionReplay":
-            // Set library
-            amplitude?.add(
-                plugin: AmplitudeSwiftSessionReplayPlugin(sampleRate: 1.0)
-            )
-            
+//             // Set library
+//             amplitude?.add(
+//                 plugin: AmplitudeSwiftSessionReplayPlugin(sampleRate: 1.0)
+//             )
+
+            _ = SessionReplayPlugin(sampleRate: 1.0)
             result("initAmplitudeSessionReplay called..")
 
         case "getUserId":
